@@ -1,59 +1,151 @@
 [
     {
-        "name": "id",
-        "type": "STRING",
-        "mode": "NULLABLE"
+      "description": "Unique identifier for this record in BigQuery",
+      "mode": "NULLABLE",
+      "name": "ID",
+      "type": "STRING"
     },
     {
-        "name": "first_name",
-        "type": "STRING",
-        "mode": "NULLABLE"
+      "description": "Identifies the source of this record",
+      "mode": "NULLABLE",
+      "name": "SOURCE_ID",
+      "type": "STRING"
     },
     {
-        "name": "last_name",
-        "type": "STRING",
-        "mode": "NULLABLE"
+      "description": "Identifies the internal ID used on the target site (if applicable) to group the data that appears for sale",
+      "mode": "NULLABLE",
+      "name": "BASE_ID",
+      "type": "STRING"
     },
     {
-        "name": "dob",
-        "type": "DATE",
-        "mode": "NULLABLE"
+      "description": "Name of the Bank that issued this card",
+      "mode": "NULLABLE",
+      "name": "BANK",
+      "type": "STRING"
     },
     {
-        "name": "addresses",
-        "type": "RECORD",
-        "mode": "REPEATED",
-        "fields": [
-            {
-                "name": "status",
-                "type": "STRING",
-                "mode": "NULLABLE"
-            },
-            {
-                "name": "address",
-                "type": "STRING",
-                "mode": "NULLABLE"
-            },
-            {
-                "name": "city",
-                "type": "STRING",
-                "mode": "NULLABLE"
-            },
-            {
-                "name": "state",
-                "type": "STRING",
-                "mode": "NULLABLE"
-            },
-            {
-                "name": "zip",
-                "type": "STRING",
-                "mode": "NULLABLE"
-            },
-            {
-                "name": "numberOfYears",
-                "type": "STRING",
-                "mode": "NULLABLE"
-            }
-        ]
+      "description": "Type of card: VISA, AMEX, MASTERCARD, DISCOVER, etc",
+      "mode": "NULLABLE",
+      "name": "CARD_TYPE",
+      "type": "STRING"
+    },
+    {
+      "description": "Level of card: PLATINUM, CORPORATE, BUSINESS ELITE. etc",
+      "mode": "NULLABLE",
+      "name": "CARD_LEVEL",
+      "type": "STRING"
+    },
+    {
+      "description": "Class of card: CREDIT or DEBIT",
+      "mode": "NULLABLE",
+      "name": "CARD_CLASS",
+      "type": "STRING"
+    },
+    {
+      "description": "Bank Identification Number that determines the issuer/bank & other information about the card",
+      "mode": "NULLABLE",
+      "name": "BIN",
+      "type": "STRING"
+    },
+    {
+      "description": "Expiration month on the card",
+      "mode": "NULLABLE",
+      "name": "EXP_MONTH",
+      "type": "STRING"
+    },
+    {
+      "description": "Expiration year on the card",
+      "mode": "NULLABLE",
+      "name": "EXP_YEAR",
+      "type": "STRING"
+    },
+    {
+      "description": "Country of the cardholder",
+      "mode": "NULLABLE",
+      "name": "COUNTRY",
+      "type": "STRING"
+    },
+    {
+      "description": "State of the cardholder",
+      "mode": "NULLABLE",
+      "name": "STATE",
+      "type": "STRING"
+    },
+    {
+      "description": "Cityof the cardholder",
+      "mode": "NULLABLE",
+      "name": "CITY",
+      "type": "STRING"
+    },
+    {
+      "description": "ZIP of the cardholder",
+      "mode": "NULLABLE",
+      "name": "ZIP",
+      "type": "STRING"
+    },
+    {
+      "description": "Indicates whether the cardholder's SSN is  included",
+      "mode": "NULLABLE",
+      "name": "HAS_SSN",
+      "type": "BOOLEAN"
+    },
+    {
+      "description": "Indicates whether the cardholder's date of birth is  included",
+      "mode": "NULLABLE",
+      "name": "HAS_DOB",
+      "type": "BOOLEAN"
+    },
+    {
+      "description": "Indicates whether the cardholder's email is  included",
+      "mode": "NULLABLE",
+      "name": "HAS_EMAIL",
+      "type": "BOOLEAN"
+    },
+    {
+      "description": "Partial or full phone number (if available) of the cardholder",
+      "mode": "NULLABLE",
+      "name": "PHONE",
+      "type": "STRING"
+    },
+    {
+      "description": "Partial or full address (if available) of the cardholder",
+      "mode": "NULLABLE",
+      "name": "ADDRESS",
+      "type": "STRING"
+    },
+    {
+      "description": "Partial or full name (if available) of the cardholder",
+      "mode": "NULLABLE",
+      "name": "NAME",
+      "type": "STRING"
+    },
+    {
+      "description": "Price of the card",
+      "mode": "NULLABLE",
+      "name": "PRICE",
+      "type": "FLOAT"
+    },
+    {
+      "description": "Timestamp identifying when the record was inserted into BigQuery",
+      "mode": "NULLABLE",
+      "name": "DATE_ADDED",
+      "type": "TIMESTAMP"
+    },
+    {
+      "description": "Partial or full card number (if available) of the card",
+      "mode": "NULLABLE",
+      "name": "CARD_NUMBER",
+      "type": "STRING"
+    },
+    {
+      "description": "Partial or full email (if available) of the cardholder",
+      "name": "EMAIL",
+      "type": "STRING"
+    },
+    {
+      "description": "Indicates whether or not the cardholder's IP address is included",
+      "name": "HAS_IP",
+      "type": "BOOLEAN"
     }
-]
+  ]
+  
